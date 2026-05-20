@@ -43,7 +43,7 @@ def scrape():
 
     # Build display string: "May 20, 2026 at 9:44pm EDT"
     today = datetime.now(timezone.utc).strftime("%B %-d, %Y")
-    as_of = f"{today} at {unos_time}" if unos_time else today
+    as_of = today
 
     data = {
         "total": total,
